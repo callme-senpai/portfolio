@@ -1,0 +1,125 @@
+{% extends 'base.html' %}
+{% block body %}
+<main>
+    
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src = 'https://source.unsplash.com/1200x500/?programming' class='d-block w-100'alt="...">
+  
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <h1>{{first}}</h1>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+            <img src = 'https://source.unsplash.com/1200x500/?coding' class='d-block w-100'alt="...">
+  
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>{{second}}</h1>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+            <img src = 'https://source.unsplash.com/1200x500/?programmer' class='d-block w-100'alt="...">
+  
+          <div class="container">
+            
+            <div class="carousel-caption text-end">
+              <h1>{{third}}</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  
+  
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+  
+    <div class="container marketing">
+        <h1 class='text-center my-4'>Ayan's Projects</h1>
+      <!-- Three columns of text below the carousel -->
+      <div class="row my-4">
+        <div class="col-lg-4">
+          <img src='./static/todoss.png' class='border border-dark rounded-circle' width="140" height="140">
+  
+          <h2 class="fw-normal">Todo Website</h2>
+          <p>My first flask project which I made using Bootstrap while learning complete Flask and also learned how to deploy it to heroku. You can access this site by using this link - <a href='https://todo-senpai.herokuapp.com'>https://todo-senpai.herokuapp.com</a></p>
+          <p><a class="btn btn-secondary" href="https://github.com/callme-senpai/Todo-Site">Source Code &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img src='./static/port.png' class='border border-dark rounded-circle' width="140" height="140">
+  
+          <h2 class="fw-normal">Portfolio Website</h2>
+          <p>My first Django project(second in total) which I made using Bootstrap again(because its easier that way) and again deployed it to heroku (because its free). You can access this site by using - <a href="https://portfolioofayan.herokuapp.com">https://portfolioofayan.herokuapp.com</a></p>
+          <p><a class="btn btn-secondary" href="https://github.com/callme-senpai/portfolio">Source Code &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img src='./static/peace.png' class='border border-dark rounded-circle' width="140" height="140">
+  
+          <h2 class="fw-normal">Stay Updated</h2>
+          <p>I have just started and have a long way to go. I like to experiment on things you may find it amusing, you can follow me on Instagram for instant updates.</p>
+          <p><a class="btn btn-secondary" href="//www.instagram.com/ig_ayanokojii/">Instagram &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+      <!-- START THE FEATURETTES -->
+  
+      <hr class="featurette-divider">
+  
+      <div class="row featurette">
+        <div class="col-md-7">Hi, My Name is
+          <h1 class="featurette-heading fw-normal lh-1">Ayan<span class="text-muted"></span></h1>
+          <p class="lead"><strong>I build things and designs for the web and mobile.</strong> I am a software and web app developer/designer based Jharkhand,India. I currently work using Python mainly and learning JavaScript and its components. I am going to keep trying and keep innovating.</p>
+        </div>
+        <div class="col-md-5">
+          <img src='/static/pic1.jpg' class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
+  
+        </div>
+      </div>
+  
+      <hr class="featurette-divider">
+  
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
+          <p class="lead">I am currently in College,First Year. Unlike my pictures I am a cheerful person, you might think once before reaching me but try once you'll never regret it. I like to make friends and create bonds with everyone but I just am not able to express it. I am in your care, make good use of me. Thank you for reading upto here.</p>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <img src='/static/pic2.jpg' class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
+  
+        </div>
+      </div>
+  
+  
+      <hr class="featurette-divider">
+  
+      <!-- /END THE FEATURETTES -->
+  
+    </div><!-- /.container -->
+  
+  
+    <!-- FOOTER -->
+    <footer class="container text-center">
+      <p class="float-end"><a href="#">Back to top</a></p>
+      <p>&copy; 2021–2022 Ayan's Portfolio </p>
+    </footer>
+  </main>
+{% endblock body %}
